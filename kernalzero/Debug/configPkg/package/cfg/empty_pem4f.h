@@ -11,7 +11,7 @@
 extern const ti_sysbios_family_arm_m3_Hwi_Handle m3Hwi0;
 
 #include <ti/sysbios/knl/Swi.h>
-extern const ti_sysbios_knl_Swi_Handle swi0;
+extern const ti_sysbios_knl_Swi_Handle LEDSwi;
 
 extern int xdc_runtime_Startup__EXECFXN__C;
 

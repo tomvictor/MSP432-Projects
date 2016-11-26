@@ -2,4 +2,5 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>Texas Instruments Code Composer Studio EnergyTrace Plugin</comment>
+<entry key="CaptureLen">1000</entry>
 </properties>

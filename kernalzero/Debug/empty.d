@@ -92,10 +92,9 @@ empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__epilogue.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
-empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task__prologue.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/package.defs.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
@@ -114,11 +113,21 @@ empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log__epilogue.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IHeap.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task__prologue.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IHeap.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/ITaskSupport.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
@@ -139,14 +148,6 @@ empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
-empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
@@ -293,10 +294,9 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__epilogue.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
-C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task__prologue.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/package.defs.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
@@ -315,11 +315,21 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log__epilogue.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IHeap.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Task__prologue.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IHeap.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/ITaskSupport.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
@@ -340,14 +350,6 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
-C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
