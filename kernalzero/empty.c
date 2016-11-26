@@ -27,6 +27,13 @@ Char task0Stack[TASKSTACKSIZE];
 /* Application Defines  */
 #define TIMER_PERIOD    0xFFFF
 
+void TimerISR(void);
+void swi0Fxn(void);
+
+
+
+
+
 /* Timer_A UpMode Configuration Parameter */
 const Timer_A_UpModeConfig upConfig =
 {
@@ -58,7 +65,7 @@ void heartBeatFxn(UArg arg0, UArg arg1)
 
 unsigned int temp ;
 
-void SWIfn()
+void swi0Fxn()
 {
 	temp++;
 	GPIO_toggle(Board_LED1);
@@ -67,11 +74,6 @@ void SWIfn()
 	            TIMER_A_CAPTURECOMPARE_REGISTER_0);
 }
 
-void TimerISR()
-{
-	Swi_post(LEDSwi) ;
-
-}
 
 
 /*
@@ -117,10 +119,22 @@ int main(void)
     /* Enabling MASTER interrupts */
     //MAP_Interrupt_enableMaster();
 
+    // swi code by Tom
+
+
+
+
     System_flush();
 
     /* Start BIOS */
     BIOS_start();
 
     return (0);
+}
+
+
+void TimerISR()
+{
+	Swi_post(swi0Handle) ;
+
 }

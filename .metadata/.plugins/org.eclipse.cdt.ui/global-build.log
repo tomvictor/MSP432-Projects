@@ -12,7 +12,7 @@ gmake[1]: Leaving directory 'C:/Users/Abhijith/Documents/workshop/kernalzero/src
 
 >> Compilation failure
 subdir_rules.mk:14: recipe for target 'empty.obj' failed
-"../empty.c", line 72: error #20: identifier "LEDSwi" is undefined
+"../empty.c", line 138: error #20: identifier "swi0Handle" is undefined
 1 error detected in the compilation of "../empty.c".
 gmake: *** [empty.obj] Error 1
 gmake: Target 'all' not remade because of errors.

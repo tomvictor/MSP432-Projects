@@ -1281,8 +1281,8 @@ const __T1_ti_sysbios_knl_Idle_coreList ti_sysbios_knl_Idle_coreList__A[2];
  * ======== ti.sysbios.knl.Swi DECLARATIONS ========
  */
 
-/* --> SWIfn */
-extern xdc_Void SWIfn(xdc_UArg,xdc_UArg);
+/* --> swi0Fxn */
+extern xdc_Void swi0Fxn(xdc_UArg,xdc_UArg);
 
 /* Object__table__V */
 ti_sysbios_knl_Swi_Object__ ti_sysbios_knl_Swi_Object__table__V[2];
@@ -1575,7 +1575,7 @@ typedef struct xdc_runtime_Text_Module_State__ {
 xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V;
 
 /* --> xdc_runtime_Text_charTab__A */
-const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6194];
+const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6198];
 
 /* --> xdc_runtime_Text_nodeTab__A */
 const __T1_xdc_runtime_Text_nodeTab xdc_runtime_Text_nodeTab__A[46];
@@ -4834,7 +4834,7 @@ ti_sysbios_knl_Swi_Object__ ti_sysbios_knl_Swi_Object__table__V[2] = {
             ((ti_sysbios_knl_Queue_Elem*)((void*)&ti_sysbios_knl_Swi_Object__table__V[0].qElem)),  /* next */
             ((ti_sysbios_knl_Queue_Elem*)((void*)&ti_sysbios_knl_Swi_Object__table__V[0].qElem)),  /* prev */
         },  /* qElem */
-        ((xdc_Void(*)(xdc_UArg,xdc_UArg))((xdc_Fxn)SWIfn)),  /* fxn */
+        ((xdc_Void(*)(xdc_UArg,xdc_UArg))((xdc_Fxn)swi0Fxn)),  /* fxn */
         ((xdc_UArg)(0x0)),  /* arg0 */
         ((xdc_UArg)(0x0)),  /* arg1 */
         (xdc_UInt)0xf,  /* priority */
@@ -6864,7 +6864,7 @@ xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V = {
 
 /* --> xdc_runtime_Text_charTab__A */
 #pragma DATA_SECTION(xdc_runtime_Text_charTab__A, ".const:xdc_runtime_Text_charTab__A");
-const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6194] = {
+const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6198] = {
     (xdc_Char)0x0,  /* [0] */
     (xdc_Char)0x41,  /* [1] */
     (xdc_Char)0x5f,  /* [2] */
@@ -13016,49 +13016,53 @@ const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6194] = {
     (xdc_Char)0x71,  /* [6148] */
     (xdc_Char)0x73,  /* [6149] */
     (xdc_Char)0x0,  /* [6150] */
-    (xdc_Char)0x4c,  /* [6151] */
-    (xdc_Char)0x45,  /* [6152] */
-    (xdc_Char)0x44,  /* [6153] */
-    (xdc_Char)0x53,  /* [6154] */
-    (xdc_Char)0x77,  /* [6155] */
-    (xdc_Char)0x69,  /* [6156] */
-    (xdc_Char)0x0,  /* [6157] */
-    (xdc_Char)0x74,  /* [6158] */
-    (xdc_Char)0x69,  /* [6159] */
-    (xdc_Char)0x2e,  /* [6160] */
-    (xdc_Char)0x73,  /* [6161] */
-    (xdc_Char)0x79,  /* [6162] */
-    (xdc_Char)0x73,  /* [6163] */
-    (xdc_Char)0x62,  /* [6164] */
-    (xdc_Char)0x69,  /* [6165] */
-    (xdc_Char)0x6f,  /* [6166] */
+    (xdc_Char)0x73,  /* [6151] */
+    (xdc_Char)0x77,  /* [6152] */
+    (xdc_Char)0x69,  /* [6153] */
+    (xdc_Char)0x30,  /* [6154] */
+    (xdc_Char)0x48,  /* [6155] */
+    (xdc_Char)0x61,  /* [6156] */
+    (xdc_Char)0x6e,  /* [6157] */
+    (xdc_Char)0x64,  /* [6158] */
+    (xdc_Char)0x6c,  /* [6159] */
+    (xdc_Char)0x65,  /* [6160] */
+    (xdc_Char)0x0,  /* [6161] */
+    (xdc_Char)0x74,  /* [6162] */
+    (xdc_Char)0x69,  /* [6163] */
+    (xdc_Char)0x2e,  /* [6164] */
+    (xdc_Char)0x73,  /* [6165] */
+    (xdc_Char)0x79,  /* [6166] */
     (xdc_Char)0x73,  /* [6167] */
-    (xdc_Char)0x2e,  /* [6168] */
-    (xdc_Char)0x6b,  /* [6169] */
-    (xdc_Char)0x6e,  /* [6170] */
-    (xdc_Char)0x6c,  /* [6171] */
+    (xdc_Char)0x62,  /* [6168] */
+    (xdc_Char)0x69,  /* [6169] */
+    (xdc_Char)0x6f,  /* [6170] */
+    (xdc_Char)0x73,  /* [6171] */
     (xdc_Char)0x2e,  /* [6172] */
-    (xdc_Char)0x54,  /* [6173] */
-    (xdc_Char)0x61,  /* [6174] */
-    (xdc_Char)0x73,  /* [6175] */
-    (xdc_Char)0x6b,  /* [6176] */
-    (xdc_Char)0x2e,  /* [6177] */
-    (xdc_Char)0x49,  /* [6178] */
-    (xdc_Char)0x64,  /* [6179] */
-    (xdc_Char)0x6c,  /* [6180] */
-    (xdc_Char)0x65,  /* [6181] */
-    (xdc_Char)0x54,  /* [6182] */
-    (xdc_Char)0x61,  /* [6183] */
-    (xdc_Char)0x73,  /* [6184] */
-    (xdc_Char)0x6b,  /* [6185] */
-    (xdc_Char)0x0,  /* [6186] */
-    (xdc_Char)0x6d,  /* [6187] */
-    (xdc_Char)0x33,  /* [6188] */
-    (xdc_Char)0x48,  /* [6189] */
-    (xdc_Char)0x77,  /* [6190] */
-    (xdc_Char)0x69,  /* [6191] */
-    (xdc_Char)0x30,  /* [6192] */
-    (xdc_Char)0x0,  /* [6193] */
+    (xdc_Char)0x6b,  /* [6173] */
+    (xdc_Char)0x6e,  /* [6174] */
+    (xdc_Char)0x6c,  /* [6175] */
+    (xdc_Char)0x2e,  /* [6176] */
+    (xdc_Char)0x54,  /* [6177] */
+    (xdc_Char)0x61,  /* [6178] */
+    (xdc_Char)0x73,  /* [6179] */
+    (xdc_Char)0x6b,  /* [6180] */
+    (xdc_Char)0x2e,  /* [6181] */
+    (xdc_Char)0x49,  /* [6182] */
+    (xdc_Char)0x64,  /* [6183] */
+    (xdc_Char)0x6c,  /* [6184] */
+    (xdc_Char)0x65,  /* [6185] */
+    (xdc_Char)0x54,  /* [6186] */
+    (xdc_Char)0x61,  /* [6187] */
+    (xdc_Char)0x73,  /* [6188] */
+    (xdc_Char)0x6b,  /* [6189] */
+    (xdc_Char)0x0,  /* [6190] */
+    (xdc_Char)0x6d,  /* [6191] */
+    (xdc_Char)0x33,  /* [6192] */
+    (xdc_Char)0x48,  /* [6193] */
+    (xdc_Char)0x77,  /* [6194] */
+    (xdc_Char)0x69,  /* [6195] */
+    (xdc_Char)0x30,  /* [6196] */
+    (xdc_Char)0x0,  /* [6197] */
 };
 
 /* --> xdc_runtime_Text_nodeTab__A */
@@ -13348,7 +13352,7 @@ __FAR__ const CT__xdc_runtime_Text_nodeTab xdc_runtime_Text_nodeTab__C = ((CT__x
 
 /* charCnt__C */
 #pragma DATA_SECTION(xdc_runtime_Text_charCnt__C, ".const:xdc_runtime_Text_charCnt__C");
-__FAR__ const CT__xdc_runtime_Text_charCnt xdc_runtime_Text_charCnt__C = (xdc_Int16)0x1832;
+__FAR__ const CT__xdc_runtime_Text_charCnt xdc_runtime_Text_charCnt__C = (xdc_Int16)0x1836;
 
 /* nodeCnt__C */
 #pragma DATA_SECTION(xdc_runtime_Text_nodeCnt__C, ".const:xdc_runtime_Text_nodeCnt__C");
@@ -17403,5 +17407,5 @@ const ti_sysbios_family_arm_m3_Hwi_Handle m3Hwi0 = (ti_sysbios_family_arm_m3_Hwi
     __attribute__ ((externally_visible))
 #endif
 #endif
-const ti_sysbios_knl_Swi_Handle LEDSwi = (ti_sysbios_knl_Swi_Handle)((ti_sysbios_knl_Swi_Handle)&ti_sysbios_knl_Swi_Object__table__V[0]);
+const ti_sysbios_knl_Swi_Handle swi0Handle = (ti_sysbios_knl_Swi_Handle)((ti_sysbios_knl_Swi_Handle)&ti_sysbios_knl_Swi_Object__table__V[0]);
 
