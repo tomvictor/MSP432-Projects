@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project swi_MSP_EXP432P401R_TI_MSP432P401R ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory 'C:/Users/Abhijith/Documents/workshop/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory 'C:/Users/Abhijith/Documents/workshop/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+
+**** Build Finished ****
