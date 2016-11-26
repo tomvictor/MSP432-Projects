@@ -1,0 +1,4 @@
+gmake.exe: *** Deleting file `package/cfg/gpiointerrupt_pem4f.xdl'
+[C:\ti\ccsv6\tools\compiler\arm_15.12.3.LTS\bin\armasm.exe forced exit]
+gmake.exe: *** [package/cfg/gpiointerrupt_pem4f.xdl] Deleting file `package/cfg/gpiointerrupt_pem4f.h'
+gmake.exe: *** [package/cfg/gpiointerrupt_pem4f.xdl] Deleting file `package/cfg/gpiointerrupt_pem4f.c'

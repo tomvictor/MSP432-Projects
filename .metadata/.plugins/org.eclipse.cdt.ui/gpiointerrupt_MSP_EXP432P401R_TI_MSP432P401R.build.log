@@ -1,0 +1,28 @@
+
+**** Build of configuration Debug for project gpiointerrupt_MSP_EXP432P401R_TI_MSP432P401R ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../gpiointerrupt.cfg'
+'Invoking: XDCtools'
+"C:/ti/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/packages;C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages;C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages;C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/uia_2_00_06_52/packages;C:/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path=\"C:/ti/ccsv6/ccs_base/arm/include\" --include_path=\"C:/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"C:/Users/Abhijith/Documents/workshop/gpiointerrupt_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/inc/CMSIS\" --include_path=\"C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/inc\" --include_path=\"C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx\" --include_path=\"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include\" --advice:power=all --advice:power_severity=suppress -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi  " "../gpiointerrupt.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring gpiointerrupt.xem4f from package/cfg/gpiointerrupt_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/Users/Abhijith/Documents/workshop/gpiointerrupt_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory `C:/Users/Abhijith/Documents/workshop/gpiointerrupt_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+clem4f C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.c ...
+gmake.exe: *** Deleting file `package/cfg/gpiointerrupt_pem4f.xdl'
+[C:\ti\ccsv6\tools\compiler\arm_15.12.3.LTS\bin\armasm.exe forced exit]
+gmake.exe: *** [package/cfg/gpiointerrupt_pem4f.xdl] Deleting file `package/cfg/gpiointerrupt_pem4f.h'
+gmake.exe: *** [package/cfg/gpiointerrupt_pem4f.xdl] Deleting file `package/cfg/gpiointerrupt_pem4f.c'
+
+**** Build of configuration Debug for project gpiointerrupt_MSP_EXP432P401R_TI_MSP432P401R ****
+
+!CommandLauncher.error.commandCanceled!
+Error: Program "C:/ti/ccsv6/utils/bin/gmake" is not found in PATH
+
+PATH=[C:\ti\ccsv6\ccs_base\common\bin;C:\ti\ccsv6\ccs_base\common\uscif;C:\ti\ccsv6\ccs_base\DebugServer\license;C:\ti\ccsv6\ccs_base\common\bin;C:\ti\ccsv6\ccs_base\common\uscif;C:\ti\ccsv6\ccs_base\DebugServer\license;C:\ti\ccsv6\ccs_base\common\bin;C:\ti\ccsv6\ccs_base\common\uscif;C:\ti\ccsv6\ccs_base\DebugServer\license;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\Abhijith\AppData\Local\Microsoft\WindowsApps;]
+
+**** Build Finished ****
