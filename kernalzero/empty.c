@@ -56,13 +56,13 @@ Char task0Stack[TASKSTACKSIZE];
 
 
 /* Application Defines  */
-#define TIMER_PERIOD    0x2DC6
+#define TIMER_PERIOD    0xFFFF
 
 /* Timer_A UpMode Configuration Parameter */
 const Timer_A_UpModeConfig upConfig =
 {
-		TIMER_A_CLOCKSOURCE_ACLK,              // SMCLK Clock Source
-        TIMER_A_CLOCKSOURCE_DIVIDER_64,          // SMCLK/1 = 3MHz
+		TIMER_A_CLOCKSOURCE_ACLK,              // aclk Clock Source
+        TIMER_A_CLOCKSOURCE_DIVIDER_10,          // SMCLK/1 = 3MHz
         TIMER_PERIOD,                           // 5000 tick period
         TIMER_A_TAIE_INTERRUPT_DISABLE,         // Disable Timer interrupt
         TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE ,    // Enable CCR0 interrupt
@@ -81,19 +81,27 @@ Void heartBeatFxn(UArg arg0, UArg arg1)
     while (1) {
         Task_sleep((UInt)arg0);
         GPIO_toggle(Board_LED0);
+        System_printf("TOGLE hbt fn") ;
     }
 }
 
+unsigned int temp ;
 
 Void TimerISR()
 {
+	temp++;
+	System_printf("timer isr fn") ;
 	GPIO_toggle(Board_LED1);
+	MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
+	            TIMER_A_CAPTURECOMPARE_REGISTER_0);
+
 }
 
 
 /*
  *  ======== main ========
  */
+
 int main(void)
 {
     Task_Params taskParams;
@@ -104,29 +112,32 @@ int main(void)
 
     /* Construct heartBeat Task  thread */
     Task_Params_init(&taskParams);
-    taskParams.arg0 = 5000;
+    taskParams.arg0 = 1000;
     taskParams.stackSize = TASKSTACKSIZE;
     taskParams.stack = &task0Stack;
     Task_construct(&task0Struct, (Task_FuncPtr)heartBeatFxn, &taskParams, NULL);
 
     /* Turn on user LED */
-    GPIO_write(Board_LED0, Board_LED_ON);
+    GPIO_write(Board_LED0, Board_LED_OFF);
+    GPIO_write(Board_LED1, Board_LED_OFF);
 
     System_printf("Starting the example\nSystem provider is set to SysMin. "
                   "Halt the target to view any SysMin contents in ROV.\n");
     /* SysMin will only print to the console when you call flush or exit */
 
-    //Code by Tom
+    // Code by Tom
 
     MAP_Timer_A_configureUpMode(TIMER_A1_BASE, &upConfig);
 
     /* Enabling interrupts and starting the timer */
-    MAP_Interrupt_enableSleepOnIsrExit();
+    //MAP_Interrupt_enableSleepOnIsrExit();
+
     MAP_Interrupt_enableInterrupt(INT_TA1_0);
+
     MAP_Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_UP_MODE);
 
     /* Enabling MASTER interrupts */
-    MAP_Interrupt_enableMaster();
+    //MAP_Interrupt_enableMaster();
 
     System_flush();
 
