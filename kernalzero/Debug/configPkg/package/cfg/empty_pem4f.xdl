@@ -90,15 +90,13 @@
 
 /* Content from ti.platforms.msp432 (null): */
 
-/* Content from ti.sysbios (null): */
-
 /* Content from ti.sysbios.family.arm.msp432.init (null): */
 
-/* Content from ti.drivers.ports (null): */
-
-/* Content from ti.mw.fatfs (null): */
-
 /* Content from ti.sysbios.hal (null): */
+
+/* Content from ti.sysbios (null): */
+
+/* Content from ti.sysbios.knl (null): */
 
 /* Content from ti.sysbios.family.arm.msp432 (null): */
 
@@ -107,7 +105,9 @@
 --retain "*(.resetVecs)"
 ti_sysbios_family_arm_m3_Hwi_nvic = 0xe000e000;
 
-/* Content from ti.sysbios.knl (null): */
+/* Content from ti.drivers.ports (null): */
+
+/* Content from ti.mw.fatfs (null): */
 
 /* Content from ti.drivers (null): */
 

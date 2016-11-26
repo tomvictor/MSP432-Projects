@@ -42,13 +42,9 @@
 #include <ti/sysbios/knl/Task.h>
 
 /* TI-RTOS Header files */
+#include "driverlib.h"
 #include <ti/drivers/GPIO.h>
-// #include <ti/drivers/I2C.h>
-// #include <ti/drivers/SDSPI.h>
-// #include <ti/drivers/SPI.h>
-// #include <ti/drivers/UART.h>
-// #include <ti/drivers/Watchdog.h>
-// #include <ti/drivers/WiFi.h>
+
 
 /* Board Header file */
 #include "Board.h"
@@ -57,6 +53,23 @@
 
 Task_Struct task0Struct;
 Char task0Stack[TASKSTACKSIZE];
+
+
+/* Application Defines  */
+#define TIMER_PERIOD    0x2DC6
+
+/* Timer_A UpMode Configuration Parameter */
+const Timer_A_UpModeConfig upConfig =
+{
+		TIMER_A_CLOCKSOURCE_ACLK,              // SMCLK Clock Source
+        TIMER_A_CLOCKSOURCE_DIVIDER_64,          // SMCLK/1 = 3MHz
+        TIMER_PERIOD,                           // 5000 tick period
+        TIMER_A_TAIE_INTERRUPT_DISABLE,         // Disable Timer interrupt
+        TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE ,    // Enable CCR0 interrupt
+        TIMER_A_DO_CLEAR                        // Clear value
+};
+
+
 
 /*
  *  ======== heartBeatFxn ========
@@ -71,10 +84,10 @@ Void heartBeatFxn(UArg arg0, UArg arg1)
     }
 }
 
-Void ledTogle()
+
+Void TimerISR()
 {
-	Task_sleep(1000) ;
-	GPIO_toggle(Board_LED2);
+	GPIO_toggle(Board_LED1);
 }
 
 
@@ -88,12 +101,6 @@ int main(void)
     /* Call board init functions */
     Board_initGeneral();
     Board_initGPIO();
-    // Board_initI2C();
-    // Board_initSDSPI();
-    // Board_initSPI();
-    // Board_initUART();
-    // Board_initWatchdog();
-    // Board_initWiFi();
 
     /* Construct heartBeat Task  thread */
     Task_Params_init(&taskParams);
@@ -108,6 +115,19 @@ int main(void)
     System_printf("Starting the example\nSystem provider is set to SysMin. "
                   "Halt the target to view any SysMin contents in ROV.\n");
     /* SysMin will only print to the console when you call flush or exit */
+
+    //Code by Tom
+
+    MAP_Timer_A_configureUpMode(TIMER_A1_BASE, &upConfig);
+
+    /* Enabling interrupts and starting the timer */
+    MAP_Interrupt_enableSleepOnIsrExit();
+    MAP_Interrupt_enableInterrupt(INT_TA1_0);
+    MAP_Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_UP_MODE);
+
+    /* Enabling MASTER interrupts */
+    MAP_Interrupt_enableMaster();
+
     System_flush();
 
     /* Start BIOS */

@@ -217,6 +217,34 @@ digraph configuration {
     }
     subgraph cluster27 {
         label="";
+        ti_sysbios_family_arm_msp432_init__top [shape=box,label="ti.sysbios.family.arm.msp432.init\n1,0,0,0,0", color=white];
+        ti_sysbios_family_arm_msp432_init__bot [shape=point,label="", style=invis];
+        ti_sysbios_family_arm_msp432_init_Boot [style=filled,fillcolor=lightgray, label="Boot"];
+        ti_sysbios_family_arm_msp432_init__top -> ti_sysbios_family_arm_msp432_init_Boot[style=invis];
+        ti_sysbios_family_arm_msp432_init_Boot -> ti_sysbios_family_arm_msp432_init__bot[style=invis];
+    }
+    subgraph cluster28 {
+        label="";
+        ti_sysbios_hal__top [shape=box,label="ti.sysbios.hal\n2,0,0,0,0", color=white];
+        ti_sysbios_hal__bot [shape=point,label="", style=invis];
+        ti_sysbios_hal_Core [style=filled,fillcolor=lightgray, label="Core"];
+        ti_sysbios_hal__top -> ti_sysbios_hal_Core[style=invis];
+        ti_sysbios_hal_Core -> ti_sysbios_hal__bot[style=invis];
+        ti_sysbios_hal_CoreNull [style=filled,fillcolor=lightgray, label="CoreNull"];
+        ti_sysbios_hal__top -> ti_sysbios_hal_CoreNull[style=invis];
+        ti_sysbios_hal_CoreNull -> ti_sysbios_hal__bot[style=invis];
+        ti_sysbios_hal_Hwi [style=filled,fillcolor=lightgray, label="Hwi"];
+        ti_sysbios_hal__top -> ti_sysbios_hal_Hwi[style=invis];
+        ti_sysbios_hal_Hwi -> ti_sysbios_hal__bot[style=invis];
+        ti_sysbios_hal_Core_CoreProxy [style=filled,fillcolor=lightgray, label="Core_CoreProxy"];
+        ti_sysbios_hal__top -> ti_sysbios_hal_Core_CoreProxy[style=invis];
+        ti_sysbios_hal_Core_CoreProxy -> ti_sysbios_hal__bot[style=invis];
+        ti_sysbios_hal_Hwi_HwiProxy [style=filled,fillcolor=lightgray, label="Hwi_HwiProxy"];
+        ti_sysbios_hal__top -> ti_sysbios_hal_Hwi_HwiProxy[style=invis];
+        ti_sysbios_hal_Hwi_HwiProxy -> ti_sysbios_hal__bot[style=invis];
+    }
+    subgraph cluster29 {
+        label="";
         ti_sysbios__top [shape=box,label="ti.sysbios\n2,0,0,0,0", color=white];
         ti_sysbios__bot [shape=point,label="", style=invis];
         ti_sysbios_BIOS [style=filled,fillcolor=lightgray, label="BIOS"];
@@ -229,60 +257,7 @@ digraph configuration {
         ti_sysbios__top -> ti_sysbios_BIOS_RtsGateProxy[style=invis];
         ti_sysbios_BIOS_RtsGateProxy -> ti_sysbios__bot[style=invis];
     }
-    subgraph cluster28 {
-        label="";
-        ti_sysbios_family_arm_msp432_init__top [shape=box,label="ti.sysbios.family.arm.msp432.init\n1,0,0,0,0", color=white];
-        ti_sysbios_family_arm_msp432_init__bot [shape=point,label="", style=invis];
-        ti_sysbios_family_arm_msp432_init_Boot [style=filled,fillcolor=lightgray, label="Boot"];
-        ti_sysbios_family_arm_msp432_init__top -> ti_sysbios_family_arm_msp432_init_Boot[style=invis];
-        ti_sysbios_family_arm_msp432_init_Boot -> ti_sysbios_family_arm_msp432_init__bot[style=invis];
-    }
-    subgraph cluster29 {
-        label="";
-        ti_drivers_ports__top [shape=box,label="ti.drivers.ports\n1,0,0,0", color=white];
-    }
     subgraph cluster30 {
-        label="";
-        ti_mw_fatfs__top [shape=box,label="ti.mw.fatfs\n", color=white];
-        ti_mw_fatfs__bot [shape=point,label="", style=invis];
-    }
-    subgraph cluster31 {
-        label="";
-        ti_sysbios_hal__top [shape=box,label="ti.sysbios.hal\n2,0,0,0,0", color=white];
-        ti_sysbios_hal__bot [shape=point,label="", style=invis];
-        ti_sysbios_hal_Hwi [style=filled,fillcolor=lightgray, label="Hwi"];
-        ti_sysbios_hal__top -> ti_sysbios_hal_Hwi[style=invis];
-        ti_sysbios_hal_Hwi -> ti_sysbios_hal__bot[style=invis];
-        ti_sysbios_hal_Hwi_HwiProxy [style=filled,fillcolor=lightgray, label="Hwi_HwiProxy"];
-        ti_sysbios_hal__top -> ti_sysbios_hal_Hwi_HwiProxy[style=invis];
-        ti_sysbios_hal_Hwi_HwiProxy -> ti_sysbios_hal__bot[style=invis];
-    }
-    subgraph cluster32 {
-        label="";
-        ti_sysbios_family_arm_msp432__top [shape=box,label="ti.sysbios.family.arm.msp432\n1,0,0,0,1449624895255", color=white];
-        ti_sysbios_family_arm_msp432__bot [shape=point,label="", style=invis];
-        ti_sysbios_family_arm_msp432_Timer [style=filled,fillcolor=lightgray, label="Timer"];
-        ti_sysbios_family_arm_msp432__top -> ti_sysbios_family_arm_msp432_Timer[style=invis];
-        ti_sysbios_family_arm_msp432_Timer -> ti_sysbios_family_arm_msp432__bot[style=invis];
-        ti_sysbios_family_arm_msp432_ClockFreqs [style=filled,fillcolor=lightgray, label="ClockFreqs"];
-        ti_sysbios_family_arm_msp432__top -> ti_sysbios_family_arm_msp432_ClockFreqs[style=invis];
-        ti_sysbios_family_arm_msp432_ClockFreqs -> ti_sysbios_family_arm_msp432__bot[style=invis];
-    }
-    subgraph cluster33 {
-        label="";
-        ti_sysbios_family_arm_m3__top [shape=box,label="ti.sysbios.family.arm.m3\n2,0,0,0,0", color=white];
-        ti_sysbios_family_arm_m3__bot [shape=point,label="", style=invis];
-        ti_sysbios_family_arm_m3_Hwi [style=filled,fillcolor=lightgray, label="Hwi"];
-        ti_sysbios_family_arm_m3__top -> ti_sysbios_family_arm_m3_Hwi[style=invis];
-        ti_sysbios_family_arm_m3_Hwi -> ti_sysbios_family_arm_m3__bot[style=invis];
-        ti_sysbios_family_arm_m3_IntrinsicsSupport [style=filled,fillcolor=lightgray, label="IntrinsicsSupport"];
-        ti_sysbios_family_arm_m3__top -> ti_sysbios_family_arm_m3_IntrinsicsSupport[style=invis];
-        ti_sysbios_family_arm_m3_IntrinsicsSupport -> ti_sysbios_family_arm_m3__bot[style=invis];
-        ti_sysbios_family_arm_m3_TaskSupport [style=filled,fillcolor=lightgray, label="TaskSupport"];
-        ti_sysbios_family_arm_m3__top -> ti_sysbios_family_arm_m3_TaskSupport[style=invis];
-        ti_sysbios_family_arm_m3_TaskSupport -> ti_sysbios_family_arm_m3__bot[style=invis];
-    }
-    subgraph cluster34 {
         label="";
         ti_sysbios_knl__top [shape=box,label="ti.sysbios.knl\n2,0,0,0,0", color=white];
         ti_sysbios_knl__bot [shape=point,label="", style=invis];
@@ -316,6 +291,40 @@ digraph configuration {
         ti_sysbios_knl_Task_SupportProxy [style=filled,fillcolor=lightgray, label="Task_SupportProxy"];
         ti_sysbios_knl__top -> ti_sysbios_knl_Task_SupportProxy[style=invis];
         ti_sysbios_knl_Task_SupportProxy -> ti_sysbios_knl__bot[style=invis];
+    }
+    subgraph cluster31 {
+        label="";
+        ti_sysbios_family_arm_msp432__top [shape=box,label="ti.sysbios.family.arm.msp432\n1,0,0,0,1449624895255", color=white];
+        ti_sysbios_family_arm_msp432__bot [shape=point,label="", style=invis];
+        ti_sysbios_family_arm_msp432_Timer [style=filled,fillcolor=lightgray, label="Timer"];
+        ti_sysbios_family_arm_msp432__top -> ti_sysbios_family_arm_msp432_Timer[style=invis];
+        ti_sysbios_family_arm_msp432_Timer -> ti_sysbios_family_arm_msp432__bot[style=invis];
+        ti_sysbios_family_arm_msp432_ClockFreqs [style=filled,fillcolor=lightgray, label="ClockFreqs"];
+        ti_sysbios_family_arm_msp432__top -> ti_sysbios_family_arm_msp432_ClockFreqs[style=invis];
+        ti_sysbios_family_arm_msp432_ClockFreqs -> ti_sysbios_family_arm_msp432__bot[style=invis];
+    }
+    subgraph cluster32 {
+        label="";
+        ti_sysbios_family_arm_m3__top [shape=box,label="ti.sysbios.family.arm.m3\n2,0,0,0,0", color=white];
+        ti_sysbios_family_arm_m3__bot [shape=point,label="", style=invis];
+        ti_sysbios_family_arm_m3_Hwi [style=filled,fillcolor=lightgray, label="Hwi"];
+        ti_sysbios_family_arm_m3__top -> ti_sysbios_family_arm_m3_Hwi[style=invis];
+        ti_sysbios_family_arm_m3_Hwi -> ti_sysbios_family_arm_m3__bot[style=invis];
+        ti_sysbios_family_arm_m3_IntrinsicsSupport [style=filled,fillcolor=lightgray, label="IntrinsicsSupport"];
+        ti_sysbios_family_arm_m3__top -> ti_sysbios_family_arm_m3_IntrinsicsSupport[style=invis];
+        ti_sysbios_family_arm_m3_IntrinsicsSupport -> ti_sysbios_family_arm_m3__bot[style=invis];
+        ti_sysbios_family_arm_m3_TaskSupport [style=filled,fillcolor=lightgray, label="TaskSupport"];
+        ti_sysbios_family_arm_m3__top -> ti_sysbios_family_arm_m3_TaskSupport[style=invis];
+        ti_sysbios_family_arm_m3_TaskSupport -> ti_sysbios_family_arm_m3__bot[style=invis];
+    }
+    subgraph cluster33 {
+        label="";
+        ti_drivers_ports__top [shape=box,label="ti.drivers.ports\n1,0,0,0", color=white];
+    }
+    subgraph cluster34 {
+        label="";
+        ti_mw_fatfs__top [shape=box,label="ti.mw.fatfs\n", color=white];
+        ti_mw_fatfs__bot [shape=point,label="", style=invis];
     }
     subgraph cluster35 {
         label="";
@@ -391,21 +400,21 @@ digraph configuration {
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
     ti_sysbios_family_arm__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster17];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_sysbios__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster27];
+    ti_sysbios_family_arm_msp432_init__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster27];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_sysbios_family_arm_msp432_init__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster28];
+    ti_sysbios_hal__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster28];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_drivers_ports__top -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster29];
+    ti_sysbios__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster29];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_mw_fatfs__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster30];
+    ti_sysbios_knl__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster30];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_sysbios_hal__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster31];
+    ti_sysbios_family_arm_msp432__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster31];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_sysbios_family_arm_msp432__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster32];
+    ti_sysbios_family_arm_m3__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster32];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_sysbios_family_arm_m3__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster33];
+    ti_drivers_ports__top -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster33];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
-    ti_sysbios_knl__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster34];
+    ti_mw_fatfs__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster34];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
     ti_drivers__bot -> ti_targets_arm_elf_M4F__1_0_5__2_5 [ltail=cluster35];
     ti_targets_arm_elf_M4F__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M4F|1,0,5.2,5",style=filled, fillcolor=lightgrey];
