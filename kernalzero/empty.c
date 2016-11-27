@@ -73,7 +73,7 @@ void TimerISR()
 //		GPIO_toggleOutputOnPin(GPIO_PORT_P2,GPIO_PIN2) ;
 
 	temp++;
-	Swi_post(swi0Handle) ;
+	Swi_inc(swi0Handle) ;
 	MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
 		            TIMER_A_CAPTURECOMPARE_REGISTER_0);
 

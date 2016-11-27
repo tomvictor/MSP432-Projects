@@ -11,3 +11,6 @@ Created Time: 2016-11-27 21:39:54.383
 
 !ENTRY org.eclipse.core.resources 2 566 2016-11-27 21:39:54.388
 !MESSAGE null parent found while collapsing trees
+
+!ENTRY org.eclipse.core.resources 2 566 2016-11-27 21:49:31.032
+!MESSAGE null parent found while collapsing trees
