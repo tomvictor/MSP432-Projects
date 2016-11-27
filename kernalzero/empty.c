@@ -65,26 +65,28 @@ void heartBeatFxn(UArg arg0, UArg arg1)
     }
 }
 
-unsigned int swiCnt ;
 void TimerISR()
 {
-	//Swi_post(swi0Handle) ;
-	Swi_post(swi0Handle);
+//	GPIO_toggle(Board_LED1);
+//		GPIO_toggleOutputOnPin(GPIO_PORT_P2,GPIO_PIN2) ;
+//		MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
+//		            TIMER_A_CAPTURECOMPARE_REGISTER_0);
+
+	Swi_post(swi0Handle) ;
+	//Swi_post(swi0Handle);
 
 }
 
 
-unsigned int temp ;
 
 void swi0Fxn()
 {
-	temp++;
 	GPIO_toggle(Board_LED1);
 	GPIO_toggleOutputOnPin(GPIO_PORT_P2,GPIO_PIN2) ;
 	MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
 	            TIMER_A_CAPTURECOMPARE_REGISTER_0);
 
-	Swi_dec(swi0Handle);
+	//Swi_dec(swi0Handle);
 
 }
 
