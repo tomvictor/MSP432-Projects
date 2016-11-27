@@ -14,19 +14,10 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>C:\Users\Abhijith\Documents\workshop\dvt\AnalysisSolutionsTemp\AnalysisSolution1480086895801\null</string>
+   <string>C:\Users\Abhijith\Documents\workshop\dvt\AnalysisSolutionsTemp\AnalysisSolution1480187827172\null</string>
   </void>
   <void method="add">
    <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\CCSgraphs\solutions\SingleTime\singletime</string>
-  </void>
-  <void method="add">
-   <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\CCSgraphs\solutions\SingleTime\singletime</string>
-  </void>
-  <void method="add">
-   <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\AnalysisLibrary\DataProviders\EnergyTrace\null</string>
-  </void>
-  <void method="add">
-   <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\AnalysisLibrary\DataProviders\EnergyTrace\null</string>
   </void>
   <void method="add">
    <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\CodeGen\solutions\CodeGenCoverage</string>

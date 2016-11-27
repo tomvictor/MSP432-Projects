@@ -45,3 +45,19 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Tomy additional codes
+.idx
+.usmxml
+.log
+.rov.xs
+.oem4f
+.xml
+.xs
+.xmi
+.snap
+.resources
+.tree
+.ini
+.index
+.metadata

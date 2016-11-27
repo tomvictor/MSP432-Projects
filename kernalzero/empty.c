@@ -13,6 +13,7 @@
 /* TI-RTOS Header files */
 #include "driverlib.h"
 #include <ti/drivers/GPIO.h>
+#include <xdc/cfg/global.h>
 
 
 /* Board Header file */
@@ -27,8 +28,8 @@ Char task0Stack[TASKSTACKSIZE];
 /* Application Defines  */
 #define TIMER_PERIOD    0xFFFF
 
-void TimerISR(void);
-void swi0Fxn(void);
+//void TimerISR(void);
+//void swi0Fxn(void);
 
 
 
@@ -60,7 +61,11 @@ void heartBeatFxn(UArg arg0, UArg arg1)
     }
 }
 
+void TimerISR()
+{
+	Swi_post(swi0Handle) ;
 
+}
 
 
 unsigned int temp ;
@@ -109,17 +114,10 @@ int main(void)
 
     MAP_Timer_A_configureUpMode(TIMER_A1_BASE, &upConfig);
 
-    /* Enabling interrupts and starting the timer */
-    //MAP_Interrupt_enableSleepOnIsrExit();
-
     MAP_Interrupt_enableInterrupt(INT_TA1_0);
 
     MAP_Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_UP_MODE);
 
-    /* Enabling MASTER interrupts */
-    //MAP_Interrupt_enableMaster();
-
-    // swi code by Tom
 
 
 
@@ -132,9 +130,3 @@ int main(void)
     return (0);
 }
 
-
-void TimerISR()
-{
-	Swi_post(swi0Handle) ;
-
-}

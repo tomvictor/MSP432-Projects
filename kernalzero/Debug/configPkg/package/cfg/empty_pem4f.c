@@ -4837,12 +4837,12 @@ ti_sysbios_knl_Swi_Object__ ti_sysbios_knl_Swi_Object__table__V[2] = {
         ((xdc_Void(*)(xdc_UArg,xdc_UArg))((xdc_Fxn)swi0Fxn)),  /* fxn */
         ((xdc_UArg)(0x0)),  /* arg0 */
         ((xdc_UArg)(0x0)),  /* arg1 */
-        (xdc_UInt)0xf,  /* priority */
-        (xdc_UInt)0x8000,  /* mask */
+        (xdc_UInt)0x2,  /* priority */
+        (xdc_UInt)0x4,  /* mask */
         0,  /* posted */
         (xdc_UInt)0x0,  /* initTrigger */
         (xdc_UInt)0x0,  /* trigger */
-        (ti_sysbios_knl_Queue_Handle)&ti_sysbios_knl_Swi_Module_State_0_readyQ__A[15],  /* readyQ */
+        (ti_sysbios_knl_Queue_Handle)&ti_sysbios_knl_Swi_Module_State_0_readyQ__A[2],  /* readyQ */
         ((void*)0),  /* hookEnv */
     },
     {/* instance#1 */

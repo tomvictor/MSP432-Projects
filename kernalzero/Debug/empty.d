@@ -199,6 +199,25 @@ empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverli
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/uart.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/wdt_a.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/GPIO.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/global.h
+empty.obj: C:/Users/Abhijith/Documents/workshop/kernalzero/Debug/configPkg/package/cfg/empty_pem4f.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/package/package.defs.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h
 empty.obj: ../Board.h
 empty.obj: ../MSP_EXP432P401R.h
 
@@ -401,5 +420,24 @@ C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_0
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/uart.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/wdt_a.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/GPIO.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/global.h: 
+C:/Users/Abhijith/Documents/workshop/kernalzero/Debug/configPkg/package/cfg/empty_pem4f.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/package/package.defs.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h: 
 ../Board.h: 
 ../MSP_EXP432P401R.h: 

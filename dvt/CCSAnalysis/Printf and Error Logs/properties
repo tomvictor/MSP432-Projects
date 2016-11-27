@@ -1,0 +1,7 @@
+#Sun, 27 Nov 2016 08:52:53 +0530
+#Ant properties
+#Sun Nov 27 08:52:53 IST 2016
+p.Version=1.0.0
+
+dvt.activity.name=RTOS Analyzer/Printf and Error Logs
+dvt.factory.activity=${dvt.basepath}common/analysis/usecases/dvt/SA_DebugLogs.control.xml

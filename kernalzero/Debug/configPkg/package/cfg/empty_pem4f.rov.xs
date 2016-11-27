@@ -13624,7 +13624,7 @@ __o = __obj[676]  // ti.sysbios.knl.Swi.Instance#0
     __o['arg0'] = 0
     __o['arg1'] = 0
     __o['instance'] = __obj[677.0]
-    __o['priority'] = -1
+    __o['priority'] = 2
     __o['trigger'] = 0
 
 __o = __obj[677]  // ti.sysbios.knl.Swi.Instance#0/instance
