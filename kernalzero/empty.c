@@ -1,6 +1,7 @@
 /*
  *  ======== empty.c ========
  */
+
 /* XDCtools Header files */
 #include <xdc/std.h>
 #include <xdc/runtime/System.h>
@@ -9,6 +10,8 @@
 #include <ti/sysbios/BIOS.h>
 #include <ti/sysbios/knl/Swi.h>
 #include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Clock.h>
+#include <ti/sysbios/knl/Semaphore.h>
 
 /* TI-RTOS Header files */
 #include "driverlib.h"
@@ -31,7 +34,8 @@ Char task0Stack[TASKSTACKSIZE];
 //void TimerISR(void);
 //void swi0Fxn(void);
 
-
+Swi_Struct swi0Struct;
+Swi_Handle swi0Handle;
 
 
 
@@ -61,9 +65,11 @@ void heartBeatFxn(UArg arg0, UArg arg1)
     }
 }
 
+unsigned int swiCnt ;
 void TimerISR()
 {
-	Swi_post(swi0Handle) ;
+	//Swi_post(swi0Handle) ;
+	Swi_post(swi0Handle);
 
 }
 
@@ -77,6 +83,9 @@ void swi0Fxn()
 	GPIO_toggleOutputOnPin(GPIO_PORT_P2,GPIO_PIN2) ;
 	MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
 	            TIMER_A_CAPTURECOMPARE_REGISTER_0);
+
+	Swi_dec(swi0Handle);
+
 }
 
 
@@ -118,7 +127,17 @@ int main(void)
 
     MAP_Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_UP_MODE);
 
+    //dynamic swi declaration
+    Swi_Params swiParams;
 
+    Swi_Params_init(&swiParams);
+    swiParams.arg0 = 1;
+    swiParams.arg1 = 0;
+    swiParams.priority = 2;
+    swiParams.trigger = 0;
+
+    Swi_construct(&swi0Struct, (Swi_FuncPtr)swi0Fxn, &swiParams, NULL);
+    swi0Handle = Swi_handle(&swi0Struct);
 
 
 
