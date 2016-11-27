@@ -241,6 +241,7 @@ empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
+empty.obj: C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Clock.h
 empty.obj: ../Board.h
 empty.obj: ../MSP_EXP432P401R.h
 
@@ -485,5 +486,6 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
+C:/ti/tirex-content/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Clock.h: 
 ../Board.h: 
 ../MSP_EXP432P401R.h: 

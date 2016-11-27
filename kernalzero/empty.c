@@ -34,8 +34,8 @@ Char task0Stack[TASKSTACKSIZE];
 //void TimerISR(void);
 //void swi0Fxn(void);
 
-Swi_Struct swi0Struct;
-Swi_Handle swi0Handle;
+Swi_Struct swi0Struct,clockSwiStruct;
+Swi_Handle swi0Handle,clockSwiHandle;
 
 
 
@@ -65,15 +65,13 @@ void heartBeatFxn(UArg arg0, UArg arg1)
     }
 }
 
-unsigned int temp = 0;
 
 void TimerISR()
 {
 //	GPIO_toggle(Board_LED1);
 //		GPIO_toggleOutputOnPin(GPIO_PORT_P2,GPIO_PIN2) ;
 
-	temp++;
-	Swi_inc(swi0Handle) ;
+	Swi_post(swi0Handle) ;
 	MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
 		            TIMER_A_CAPTURECOMPARE_REGISTER_0);
 
@@ -88,8 +86,18 @@ void swi0Fxn()
 	MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
 	            TIMER_A_CAPTURECOMPARE_REGISTER_0);
 
-	//Swi_dec(swi0Handle);
+}
 
+// Clock Function
+
+void clockFn1(){
+	Swi_post(clockSwiHandle) ;
+}
+
+//clock swi function
+
+void clockSwiFn(void){
+	GPIO_toggleOutputOnPin(GPIO_PORT_P2,GPIO_PIN1) ;
 }
 
 
@@ -117,6 +125,7 @@ int main(void)
     GPIO_write(Board_LED0, Board_LED_OFF);
     GPIO_write(Board_LED1, Board_LED_OFF);
     GPIO_setAsOutputPin(GPIO_PORT_P2,GPIO_PIN2) ;
+    GPIO_setAsOutputPin(GPIO_PORT_P2,GPIO_PIN1) ;
     GPIO_setOutputHighOnPin(GPIO_PORT_P2,GPIO_PIN2 ) ;
 
     System_printf("Starting the example\nSystem provider is set to SysMin. "
@@ -132,7 +141,7 @@ int main(void)
     MAP_Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_UP_MODE);
 
     //dynamic swi declaration
-    Swi_Params swiParams;
+    Swi_Params swiParams	;
 
     Swi_Params_init(&swiParams);
     swiParams.arg0 = 1;
@@ -142,6 +151,21 @@ int main(void)
 
     Swi_construct(&swi0Struct, (Swi_FuncPtr)swi0Fxn, &swiParams, NULL);
     swi0Handle = Swi_handle(&swi0Struct);
+    //swi code ends here
+
+    //dynamic swi declaration for clock module
+
+    Swi_Params clockSwiParams;
+
+    Swi_Params_init(&clockSwiParams);
+    clockSwiParams.arg0 = 1;
+    clockSwiParams.arg1 = 0;
+    clockSwiParams.priority = 2;
+    clockSwiParams.trigger = 0;
+
+    Swi_construct(&clockSwiStruct, (Swi_FuncPtr)clockSwiFn, &clockSwiParams, NULL);
+    clockSwiHandle = Swi_handle(&clockSwiStruct);
+    //swi code ends here
 
 
 
