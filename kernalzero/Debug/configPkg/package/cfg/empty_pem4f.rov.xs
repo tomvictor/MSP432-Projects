@@ -12217,7 +12217,7 @@ __o = __obj[534]  // ti.sysbios.knl.Clock.Instance#0
     __o['arg'] = null
     __o['instance'] = __obj[535.0]
     __o['period'] = 500
-    __o['startFlag'] = false
+    __o['startFlag'] = true
 
 __o = __obj[535]  // ti.sysbios.knl.Clock.Instance#0/instance
     __o['$category'] = String(java.net.URLDecoder.decode('Struct', 'UTF-8'))

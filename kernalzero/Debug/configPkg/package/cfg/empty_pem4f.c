@@ -4230,7 +4230,7 @@ ti_sysbios_knl_Clock_Object__ ti_sysbios_knl_Clock_Object__table__V[1] = {
         (xdc_UInt32)0x1f4,  /* timeout */
         (xdc_UInt32)0x1f4,  /* currTimeout */
         (xdc_UInt32)0x1f4,  /* period */
-        0,  /* active */
+        1,  /* active */
         ((xdc_Void(*)(xdc_UArg))((xdc_Fxn)clockFn1)),  /* fxn */
         ((xdc_UArg)0),  /* arg */
     },
