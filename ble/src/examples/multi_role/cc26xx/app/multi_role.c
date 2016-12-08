@@ -247,7 +247,7 @@ static uint8_t scanRspData[] =
   // complete name
   13,   // length of this data
   GAP_ADTYPE_LOCAL_NAME_COMPLETE,
-  'B', 'L', 'E', ' ', 'B', 'e', 'a', 'c', 'o', 'n', ':', '1',
+  'B', 'L', 'E', ' ', 'T', 'r', 'a', 'c', 'k', 'e', 'r', '1',
   
   // connection interval range
   0x05,   // length of this data
@@ -283,7 +283,7 @@ static uint8_t advertData[] =
 };
 
 // GAP GATT Attributes
-static uint8_t attDeviceName[GAP_DEVICE_NAME_LEN] = "Multi Role :)";
+static uint8_t attDeviceName[GAP_DEVICE_NAME_LEN] = "Multi Role   ";
 
 // Globals used for ATT Response retransmission
 static gattMsgEvent_t *pAttRsp = NULL;
